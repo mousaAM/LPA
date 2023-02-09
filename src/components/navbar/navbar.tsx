@@ -3,6 +3,7 @@ import data from './navbarElements.json'
 import { isBrowser } from "@builder.io/qwik/build"
 import { Link } from "@builder.io/qwik-city";
 import { englishUsedContext } from "~/context/context";
+import menuOutline from "~/svg/menu-outline.svg"
 
 
 export default component$(() => {
@@ -30,7 +31,8 @@ export default component$(() => {
     <nav dir={englishUsed.value ? "ltr" : "rtl"}
         class={`w-screen bg-blue-500 overflow-x-auto p-4 flex flex-row justify-between items-start md:items-center fixed top-0 text-white`}>
       <div>
-        <button class="block md:hidden  mx-4 px-2 py-1" onClick$={() => state.visibility = !state.visibility}>0</button>
+        <img class="block md:hidden  mx-4 px-2 py-1" onClick$={() => state.visibility = !state.visibility}
+              src={menuOutline} alt="menu" width={40} height={40} />
         <ul class={`${state.visibility ? "block" : "hidden"} md:block`}>
           {englishUsed.value 
           ? state.navbarElements.en.map((value, index) =>{
