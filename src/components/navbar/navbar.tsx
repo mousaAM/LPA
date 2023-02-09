@@ -29,7 +29,7 @@ export default component$(() => {
 
   return (
     <nav dir={englishUsed.value ? "ltr" : "rtl"}
-        class={`w-screen bg-blue-500 overflow-x-auto p-4 flex flex-row justify-between items-start md:items-center fixed top-0 text-white`}>
+        class="w-screen text-white bg-blue-500 shadow-sm overflow-x-auto p-4 flex flex-row justify-between items-start md:items-center fixed top-0 z-10">
       <div>
         <img class="block md:hidden  mx-4 px-2 py-1" onClick$={() => state.visibility = !state.visibility}
               src={menuOutline} alt="menu" width={40} height={40} />

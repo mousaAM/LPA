@@ -1,6 +1,7 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
-import Header from "~/components/header/header"
+import About from '~/components/main/about/about';
+import Header from "~/components/main/header/header"
 import Navbar from '~/components/navbar/navbar';
 
 export default component$(() => {
@@ -8,6 +9,7 @@ export default component$(() => {
     <>
       <Navbar />
       <Header />
+      <About />
     </>
   );
 });
