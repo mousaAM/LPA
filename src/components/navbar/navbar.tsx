@@ -1,4 +1,4 @@
-import { component$, useClientEffect$, useStore, useTask$, useContextProvider, useContext } from "@builder.io/qwik";
+import { component$, useClientEffect$, useStore, useTask$, useContext } from "@builder.io/qwik";
 import data from './navbarElements.json'
 import { isBrowser } from "@builder.io/qwik/build"
 import { Link } from "@builder.io/qwik-city";
