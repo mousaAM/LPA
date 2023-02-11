@@ -4,8 +4,7 @@ import { Link } from "@builder.io/qwik-city";
 import { englishUsedContext } from "~/context/context";
 import menuOutline from "~/svg/menu-outline.svg"
 import { qwikify$ } from "@builder.io/qwik-react";
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
+import { Menu, MenuItem } from '@mui/material';
 
 export const MUIMenu = qwikify$(Menu)
 export const MUIMenuItem = qwikify$(MenuItem)
