@@ -97,7 +97,7 @@ export default component$(() => {
                     class="block text-md md:inline rounded hover:text-sky-100 mx-4 my-4 md:my-0 px-2 py-1"
                     href={state.links[index]}
                   >
-                    <MUIMenuItem className="font-sans">{value}</MUIMenuItem>
+                    <MUIMenuItem>{value}</MUIMenuItem>
                   </Link>
                 );
               })}
