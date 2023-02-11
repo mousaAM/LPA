@@ -7,8 +7,8 @@ export default component$(() => {
 
   return (
     <section class="bg-emerald-50 text-center p-8">
-      <h2 class="text-emerald-900 text-4xl">{englishUsed.value ? data.en.h2 : data.ar.h2}</h2>
-      <p class="text-emerald-800 text-xl mt-8">{englishUsed.value ? data.en.content : data.ar.content}</p>
+      <h2 class="text-sky-500 text-4xl">{englishUsed.value ? data.en.h2 : data.ar.h2}</h2>
+      <p class="text-sky-600 text-xl mt-8">{englishUsed.value ? data.en.content : data.ar.content}</p>
     </section>
   )
 })

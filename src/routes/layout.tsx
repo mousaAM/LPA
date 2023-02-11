@@ -1,12 +1,22 @@
-import { Slot, component$, useStore, useContextProvider } from "@builder.io/qwik";
+import { Slot, component$, useContextProvider, useClientEffect$, useTask$, useSignal } from "@builder.io/qwik";
+import { isBrowser } from "@builder.io/qwik/build"
 import Navbar from "~/components/navbar/navbar";
-import type { IenglishUsed } from "~/context/context";
 import { englishUsedContext } from "~/context/context";
 
 
 export default component$(() => {
-  const englishUsed = useStore<IenglishUsed>({
-    value: false
+  const englishUsed = useSignal(false)
+
+  useClientEffect$(() => {
+    const english = localStorage.getItem("en")
+    english === "false" ? englishUsed.value = false : englishUsed.value = true
+  })
+
+  useTask$(({ track }) => {
+    const english = track(() => englishUsed.value)
+    if(isBrowser){
+      localStorage.setItem("en", `${english}`)
+    }
   })
 
   useContextProvider(englishUsedContext, englishUsed)
