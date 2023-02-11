@@ -1,9 +1,10 @@
 {
   "ar": {
     "h2": "من نحن ؟",
-    "content": "رابطة مبرمجي ليبيا هي أشهر مجموعة برمجة في ليبيا\nتم فتحها في سنة 2019"
+    "content": "رابطة مبرمجي ليبيا هي أشهر مجموعة برمجة في ليبيا تم إنشائها في سنة 2019 من قبل عبد الغفار نوح، و ها هي الآن كبرت و أصبحت تضم آلاف المبرمجين الذين يحاولون نشر ثقافة البرمجة في بلدنا العزيز"
   },
   "en": {
-    "h2": "who are we ?"
+    "h2": "who are we ?",
+    "content": "Libyan programmers association is the most famous programming group in Libya, the group was created in 2019 by abd alghaffar nouh, and now it grew and containes thousands of programmers trying to spread programming culture in our dear country"
   }
 }
