@@ -18,7 +18,7 @@ export default component$(() => {
       <div class="flex flex-col md:flex-row flex-wrap">
         {admins.map((value, index) => {
           return <div key={index}
-          class="text-blue-50 basis-full md:basis-1/2 my-8">
+          class="text-blue-50 text-lg basis-full md:basis-1/2 my-8">
             {englishUsed.value ? value[1] : value[0]}
           </div>
         })}
