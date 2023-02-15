@@ -15,6 +15,8 @@ export default component$(() => {
 
       <span class="absolute top-40 -left-5 w-16 h-16 animate-pulse rotate-45 border border-slate-900"></span>
       <span class="absolute bottom-40 -right-10 w-16 h-16 animate-pulse rotate-45 border border-slate-900"></span>
+      <span class="absolute top-5 left-2/3 w-16 h-16 animate-pulse rotate-45 border border-slate-900"></span>
+      <span class="absolute top-5 left-[70%] w-16 h-16 animate-pulse rotate-45 border border-slate-900"></span>
     </div>
   );
 });
