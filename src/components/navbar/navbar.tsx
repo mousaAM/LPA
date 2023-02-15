@@ -9,11 +9,8 @@ import data from "./navbarElements.json";
 import { Link } from "@builder.io/qwik-city";
 import { englishUsedContext } from "~/context/context";
 import menuOutline from "~/svg/menu-outline.svg";
-import { qwikify$ } from "@builder.io/qwik-react";
-import { Menu, MenuItem } from "@mui/material";
-
-export const MUIMenu = qwikify$(Menu);
-export const MUIMenuItem = qwikify$(MenuItem);
+// import { qwikify$ } from "@builder.io/qwik-react";
+// import { Menu, MenuItem } from "@mui/material";
 
 export default component$(() => {
   const englishUsed = useContext(englishUsedContext);
@@ -71,7 +68,7 @@ export default component$(() => {
               })}
         </ul>
 
-        <MUIMenu
+        {/* <MUIMenu
           anchorEl={anchorEl.value}
           open={state.visibility}
           onClose$={() => {
@@ -101,7 +98,7 @@ export default component$(() => {
                   </Link>
                 );
               })}
-        </MUIMenu>
+        </MUIMenu> */}
       </div>
       <button
         class="inline text-sm rounded hover:bg-blue-600 mx-4 px-2 py-1"
